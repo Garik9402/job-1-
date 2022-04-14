@@ -1,0 +1,443 @@
+        body {
+            margin: 0px;
+            padding: 37px 0px 194px;
+            background: rgb(31, 80, 181);
+            background: linear-gradient(114deg, rgba(31, 80, 181, 1) 37%, rgba(0, 27, 71, 1) 37%);
+            background-repeat: no-repeat;
+        }
+        
+        .header-w {
+            position: relative;
+            width: 100%;
+            display: flex;
+            .header {
+                max-width: 1357px;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                &__img {
+                    display: none;
+                }
+                &__main {
+                    margin: 12px 0px 19px 0px;
+                }
+                .nav {
+                    &__list {
+                        display: flex;
+                        list-style: none;
+                    }
+                    &__item:not(:first-child) {
+                        margin-left: 42px;
+                    }
+                    .main__link {
+                        font-family: 'GT Haptik Trial';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #001E4D;
+                        text-decoration: none;
+                        display: block;
+                        position: relative;
+                        &:hover {
+                            color: #FFFFFF;
+                            -webkit-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                        }
+                        &:hover:after {
+                            content: '';
+                            position: absolute;
+                            width: 6px;
+                            height: 6px;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            top: 26px;
+                            right: 45%;
+                            -webkit-transition: all 0.3 ease;
+                            transition: all 0.3 ease;
+                        }
+                    }
+                }
+                &__personaldata {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .personaldata {
+                    display: flex;
+                    &-username {
+                        display: flex;
+                        &__link {
+                            width: 39px;
+                            height: 39px;
+                            background: #22B26D;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: 'GT Haptik Trial';
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                        }
+                        &__name {
+                            margin: 10px 0px 21px 18px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            font-family: 'GT Haptik Trial';
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    &__icon {
+                        position: relative;
+                        width: 50px;
+                        height: 32px;
+                        background: url(../images/header-icon.png) no-repeat;
+                        margin: 13px 6px 7px 66px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        cursor: pointer;
+                    }
+                    &__iconred {
+                        position: absolute;
+                        left: 36px;
+                        bottom: 23px;
+                    }
+                }
+            }
+        }
+        
+        .shell-w {
+            max-width: 1286px;
+            width: 100%;
+            margin: 111px auto 0px;
+            display: flex;
+            justify-content: space-between;
+            .shell__img {
+                background-size: cover;
+            }
+            .shell {
+                max-width: 591px;
+                width: 100%;
+                margin-top: 60px;
+                &__title-top {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 60px;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                }
+                &__title {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 176px;
+                    line-height: 142px;
+                    letter-spacing: -0.01em;
+                    text-transform: uppercase;
+                    color: #F0F0EE;
+                }
+                &__available {
+                    width: 100%;
+                    margin-top: 40px;
+                    display: flex;
+                    .shell-available__title {
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 31px;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                        color: #F0F0EE;
+                        margin-right: 5px;
+                    }
+                    &--colors {
+                        display: flex;
+                        margin-left: 31px;
+                        .shell-avilable__items {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            cursor: pointer;
+                            &:not(:first-child) {
+                                margin-left: 24px;
+                                & .active2 {
+                                    border: 4px solid #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__text {
+                    font-family: 'GT Haptik Trial';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: rgba(255, 255, 255, 0.8);
+                    margin-top: 30px;
+                }
+                &__cardcost {
+                    max-width: 579px;
+                    width: 100%;
+                    display: flex;
+                    margin-top: 60px;
+                    justify-content: space-between;
+                }
+                &__cost {
+                    max-width: 210px;
+                    width: 100%;
+                    display: flex;
+                    .shellcost__currency {
+                        font-size: 37.5789px;
+                        line-height: 36px;
+                        letter-spacing: -0.01em;
+                        color: #2258C3;
+                        margin-top: 9px;
+                    }
+                    .shellcost__price {
+                        font-size: 64.4211px;
+                        line-height: 36px;
+                        letter-spacing: -0.01em;
+                        color: #FFFFFF;
+                        margin-top: 18px;
+                    }
+                }
+                &__button {
+                    max-width: 365px;
+                    width: 100%;
+                }
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .header {
+                padding: 0px 15px;
+            }
+            .shell-w {
+                margin-top: 60px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 1280px) {
+            .shell {
+                .shell__title-top {
+                    text-align: center;
+                }
+            }
+        }
+        
+        @media (max-width: 1024px) {}
+        
+        @media (max-width: 1024px) {}
+        
+        @media (max-width: 992px) {}
+        
+        @media (max-width: 768px) {
+            body {
+                padding-top: 0px;
+                padding-bottom: 110px;
+                max-width: 749px;
+                width: 100%;
+                background: rgb(31, 80, 181);
+                background: linear-gradient(24deg, rgba(3, 27, 69, 1) 0%, rgba(3, 27, 69, 1) 73%, rgba(31, 80, 181, 1) 73%) no-repeat;
+            }
+            .header-w {
+                position: relative;
+                justify-content: end;
+                .header {
+                    height: 0px;
+                    min-height: 0px;
+                    overflow: hidden;
+                    background-color: #2258C3;
+                    &__img {
+                        display: block;
+                        max-width: 508px;
+                        width: 100%;
+                    }
+                    &.active {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        justify-content: start;
+                        width: 100%;
+                        height: 1708px;
+                        position: absolute;
+                        transition: all 0.7s ease;
+                    }
+                    &__main {
+                        margin-top: 100px;
+                    }
+                    .nav {
+                        &__list {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        &__item:not(:first-child) {
+                            margin: 100px 0px 0px 0px;
+                        }
+                        .main__link {
+                            position: relative;
+                            display: block;
+                            font-size: 50px;
+                            line-height: 2;
+                            &:hover:after {
+                                content: none;
+                            }
+                        }
+                    }
+                    &__personaldata {
+                        justify-content: center;
+                    }
+                }
+                .burger {
+                    position: relative;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                    margin: 10px;
+                    &::before,
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background-color: #001B47;
+                        left: 0;
+                        position: absolute;
+                    }
+                    &::before {
+                        top: 1px;
+                    }
+                    &::after {
+                        bottom: 0;
+                    }
+                    &.active::before {
+                        transform: rotate(45deg);
+                        top: 12px;
+                        transition: all 0.3s ease;
+                    }
+                    &.active::after {
+                        transform: rotate(-45deg);
+                        bottom: 15px;
+                        transition: all 0.3s ease;
+                    }
+                    & span {
+                        position: absolute;
+                        display: inline;
+                        width: 100%;
+                        height: 3px;
+                        background-color: #001B47;
+                        top: 15px;
+                    }
+                    &.active span {
+                        transform: scale(0);
+                    }
+                }
+            }
+            .shell-w {
+                margin: 0px 110px 0px 0px;
+                .shell {
+                    &__title {
+                        font-size: 150px;
+                    }
+                    &__img {
+                        width: 100%;
+                    }
+                    .shell-cost-w {
+                        max-width: 122px;
+                    }
+                }
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .header {
+                flex-direction: column-reverse;
+                align-items: center;
+                padding: 0px 15px;
+                .personaldata {
+                    padding: 10px 0px;
+                }
+            }
+            .shell-w {
+                margin-top: 50px;
+                padding: 0px 15px;
+                .shell {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 0px;
+                    &__title {
+                        font-size: 100px;
+                    }
+                    &__cardcost {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    &__cost {
+                        justify-content: center;
+                    }
+                    &__button {
+                        margin-top: 20px;
+                    }
+                    .shell-button__img {
+                        max-width: 365px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
+        @media (max-width: 368px) {
+            .header-w {
+                .header {
+                    .nav {
+                        .main__link {
+                            font-size: 35px;
+                            line-height: 1;
+                        }
+                    }
+                    .header__personaldata {
+                        justify-content: start;
+                        .personaldata {
+                            flex-direction: column;
+                            &__icon {
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            .shell-w {
+                .shell {
+                    &__title {
+                        font-size: 85px;
+                    }
+                    &__available {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 0;
+                        &--colors {
+                            display: flex;
+                            margin-top: 10px;
+                            & {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
